@@ -1,0 +1,6 @@
+[submodule "externe/physique"]
+	path = externe/physique
+	url = https://github.com/NVIDIA-Omniverse/PhysX
+[submodule "externe/imgui"]
+	path = externe/imgui
+	url = https://github.com/ocornut/imgui
