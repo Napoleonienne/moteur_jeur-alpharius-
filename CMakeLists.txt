@@ -44,6 +44,7 @@ add_executable(${PROJECT_NAME}
     ${IMGUI_SOURCES}
 )
 add_subdirectory(externe/pybind)
+add_subdirectory(externe/spdlog)
 
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE IMGUI_IMPL_OPENGL_LOADER_GLAD)
