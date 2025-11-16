@@ -49,7 +49,9 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE IMGUI_IMPL_OPENGL_LOADER_GLAD
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE
-        ${CMAKE_SOURCE_DIR}/dependance
+        ${CMAKE_SOURCE_DIR}/dependance/
+        ${CMAKE_SOURCE_DIR}/dependance/opengl
+        ${CMAKE_SOURCE_DIR}/dependance/vulkan
         ${CMAKE_SOURCE_DIR}/externe
         ${IMGUI_DIR}
         ${IMGUI_DIR}/backends
