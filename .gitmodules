@@ -7,3 +7,6 @@
 [submodule "externe/pybind"]
 	path = externe/pybind
 	url = https://github.com/pybind/pybind11
+[submodule "externe/spdlog"]
+	path = externe/spdlog
+	url = https://github.com/gabime/spdlog
