@@ -8,6 +8,6 @@
 	path = externe/spdlog
 	url = https://github.com/gabime/spdlog
 
-[submodule "externe/phys"]
-	path = externe/phys
+[submodule "engine/phys"]
+	path = engine/physique/phys
 	url = https://github.com/NVIDIA-Omniverse/PhysX
