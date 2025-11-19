@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/implementation fmod/build",
+  "command": "/usr/bin/c++ -I\"/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/implementation fmod/api/core/inc\" -I\"/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/implementation fmod/include\" -g -o CMakeFiles/son.dir/src/main.cpp.o -c \"/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/implementation fmod/src/main.cpp\"",
+  "file": "/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/implementation fmod/src/main.cpp",
+  "output": "CMakeFiles/son.dir/src/main.cpp.o"
+}
+]

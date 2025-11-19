@@ -20,9 +20,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE
 
-    ${FMOD_CORE}/lib/libfmod.so.14
-        ${FMOD_CORE}/lib/libfmod.so.14.9
-        ${FMOD_CORE}/lib/libfmodL.so.14
-        ${FMOD_CORE}/lib/libfmodL.so.14.9
+    ${FMOD_CORE}/lib/x86_64/libfmod.so.14
 
 )
