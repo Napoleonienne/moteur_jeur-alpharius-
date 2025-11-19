@@ -11,6 +11,6 @@
 [submodule "engine/phys"]
 	path = engine/physique/phys
 	url = https://github.com/NVIDIA-Omniverse/PhysX
-[submodule "engine/son/openal1"]
-	path = engine/son/openal1
+[submodule "engine/son/implementaton openal/openal1"]
+	path = engine/son/implementaton openal/openal1
 	url = https://github.com/kcat/openal-soft
