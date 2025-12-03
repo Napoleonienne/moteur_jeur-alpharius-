@@ -37,6 +37,7 @@
 *.out
 *.app
 
+*/out
 # debug information files
 *.dwo
 engine/son/build

@@ -7,12 +7,4 @@ add_executable(${PROJECT_NAME}
 )
 
 
-set(FMO_LIB ${CMAKE_SOURCE_DIR}/fmodstudioapi20309linux)
-set(FMO_HEADER ${FMO_LIB}/api/core)
-
-target_link_libraries(${PROJECT_NAME} PRIVATE 
-    ${CMAKE_SOURCE_DIR}/api/core/inc
-
-
-
-)
+add_subdirectory(${CMAKE_SOURCE_DIR}/log)
