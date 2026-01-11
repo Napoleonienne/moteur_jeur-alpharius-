@@ -5,7 +5,7 @@ I. Les Piliers Techniques (Dépendances)
 
 Plutôt que de perdre mon temps à réinventer la roue, j'ai choisi de m'appuyer sur des fondations éprouvées pour les aspects les plus fastidieux du développement :
 
-    Physique : La gestion des collisions et de la dynamique sera confiée à PhysX. Si l'envie me prend de plonger dans les arcanes de la physique plus tard, je le ferai, mais pour l'heure, laissons cela à ceux qui l'ont déjà perfectionné.
+    Physique : La gestion des collisions et de la dynamique sera confiée à PhysX. Si l'envie me prend de plonger dans les arcanes de la physique plus tard, je le ferai, mais pour l'heure, laissons cela à ceux qui l'ont déjà      perfectionné.
 
     Audio : Par pure "flemme" — ou plutôt par une saine économie d'énergie — je refuse de manipuler manuellement les formats de données sonores. Le choix se portera sur OpenAL ou FMOD selon les besoins futurs.
 
