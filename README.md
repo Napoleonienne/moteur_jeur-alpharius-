@@ -1,32 +1,53 @@
-procject moteur 
-alpharisus sera un moteur de jeu que je compte developper dans les anné avenir pour l'instant il est dans une phase de planificcation et choi de dependance:
+Projet Moteur : Alpharisus
 
-la physique sera un element que peut-etre plus tard je m'intersesait mais pour l'instant gerer par physx
-le son la flemme de touher aux format de donner son donc sera gere par openal ou fmod a voir 
-il faut bien evidment dans un procject une maniere de savoir qu'est-ce qui passe donc on va mettre creer un syteme de log qui sera gerer par spdlog
+Alpharisus est un moteur de jeu dont la genèse s'étendra sur les années à venir. Actuellement en phase de planification et de sélection des dépendances, il se dessine comme une structure où l'ambition technique côtoie une efficacité sans concession.
+I. Les Piliers Techniques (Dépendances)
 
-a voir ajoute de la gestion du multi avec spacetimedb pour voir la tech peut-etre avznt essyer de fair la base
+Plutôt que de perdre mon temps à réinventer la roue, j'ai choisi de m'appuyer sur des fondations éprouvées pour les aspects les plus fastidieux du développement :
 
-le rendu dans un premier temp opengl puis plus tard je pasere a vulkan
-imgui pour interface
+    Physique : La gestion des collisions et de la dynamique sera confiée à PhysX. Si l'envie me prend de plonger dans les arcanes de la physique plus tard, je le ferai, mais pour l'heure, laissons cela à ceux qui l'ont déjà perfectionné.
 
-pour l'instant la structure sera une partir app et engine :
-les syteme de de base : 
-son
-physiqque
-rendu
-log
-etc
+    Audio : Par pure "flemme" — ou plutôt par une saine économie d'énergie — je refuse de manipuler manuellement les formats de données sonores. Le choix se portera sur OpenAL ou FMOD selon les besoins futurs.
 
-partir app:
-lla ou y a app
+    Journalisation (Logging) : Un système de logs robuste est indispensable pour observer le chaos. Ce rôle sera dévolu à spdlog.
 
-je compte utilise entity component
+    Interface utilisateur : L’interface de débogage et de contrôle sera propulsée par ImGui, l’outil de prédilection pour ceux qui préfèrent l’efficacité à l’esthétique de surface.
 
-sdfs:
-https://www.youtube.com/watch?v=Cp5WWtMoeKg
+    Réseau : J’envisage l’intégration de SpaceTimeDB pour explorer les frontières du multijoueur synchrone, une fois les bases du moteur solidifiées.
+
+II. Architecture du Système
+
+Le moteur sera structuré autour d'une séparation stricte entre le noyau et l'application, utilisant une approche ECS (Entity Component System) pour une performance optimale.
+
+    Cœur du Moteur (Engine) : * Gestionnaire de rendu (initialement OpenGL, avec une transition prévue vers l'austère mais puissante API Vulkan).
+
+        Systèmes de base : Son, Physique, Logging.
+
+    Application (App) : * La couche supérieure où s'articulera la logique spécifique au projet.
+
+III. Vision Graphique et Recherches
+
+Mon regard se porte vers des techniques de rendu non conventionnelles, privilégiant la précision mathématique et l'efficacité géométrique :
+
+    SDF (Signed Distance Fields) & Ray Marching : Inspiration puisée chez Inigo Quilez et Sebastian Lague pour des rendus organiques et procéduraux.
+
+    Optimisation de Terrain : Utilisation de concepts comme les GeomClipmaps et les techniques de magnification de textures alpha-testées pour garantir une fluidité sans faille.
+
+ressource:
+ https://www.youtube.com/watch?v=Cp5WWtMoeKg
+
 https://www.shadertoy.com/view/lslXD8
+
 https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
+
 https://jcgt.org/published/0011/03/06/paper-lowres.pdf
+
 https://hhoppe.com/geomclipmap.pdf
+
 https://iquilezles.org/articles/
+
+* 
+
+esquice de structure:
+<img width="2095" height="1226" alt="GlobalEngineArchitectureDiagram drawio" src="https://github.com/user-attachments/assets/c0513b16-29fc-469e-8a51-da04461baaf2" />
+
