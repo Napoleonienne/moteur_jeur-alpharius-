@@ -8,6 +8,7 @@ il faut bien evidment dans un procject une maniere de savoir qu'est-ce qui passe
 a voir ajoute de la gestion du multi avec spacetimedb pour voir la tech peut-etre avznt essyer de fair la base
 
 le rendu dans un premier temp opengl puis plus tard je pasere a vulkan
+imgui pour interface
 
 pour l'instant la structure sera une partir app et engine :
 les syteme de de base : 
