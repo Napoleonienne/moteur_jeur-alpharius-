@@ -1,16 +1,19 @@
 [submodule "externe/imgui"]
 	path = externe/imgui
 	url = https://github.com/ocornut/imgui
+	
 [submodule "externe/pybind"]
 	path = externe/pybind
 	url = https://github.com/pybind/pybind11
+
 [submodule "externe/spdlog"]
 	path = externe/spdlog
 	url = https://github.com/gabime/spdlog
 
-[submodule "engine/phys"]
-	path = engine/physique/phys
-	url = https://github.com/NVIDIA-Omniverse/PhysX
+
 [submodule "engine/son/openal1"]
 	path = engine/son/openal_implementatio/openal1
 	url = https://github.com/kcat/openal-soft
+[submodule "externe/jolt"]
+	path = externe/jolt
+	url = https://github.com/jrouwe/JoltPhysics

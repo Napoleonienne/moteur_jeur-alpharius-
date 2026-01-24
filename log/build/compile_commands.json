@@ -1,8 +1,14 @@
 [
 {
   "directory": "/home/guy/Bureau/moteur_jeur-alpharius-/log/build",
-  "command": "/usr/bin/c++ -I/home/guy/Bureau/moteur_jeur-alpharius-/log/LOG -I/home/guy/Bureau/moteur_jeur-alpharius-/log/private -I/home/guy/Bureau/moteur_jeur-alpharius-/log/include -g -o CMakeFiles/LOG.dir/src/log.cpp.o -c /home/guy/Bureau/moteur_jeur-alpharius-/log/src/log.cpp",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/LOG.dir/src/log.cpp.o -c /home/guy/Bureau/moteur_jeur-alpharius-/log/src/log.cpp",
   "file": "/home/guy/Bureau/moteur_jeur-alpharius-/log/src/log.cpp",
   "output": "CMakeFiles/LOG.dir/src/log.cpp.o"
+},
+{
+  "directory": "/home/guy/Bureau/moteur_jeur-alpharius-/log/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/LOG.dir/src/main.cpp.o -c /home/guy/Bureau/moteur_jeur-alpharius-/log/src/main.cpp",
+  "file": "/home/guy/Bureau/moteur_jeur-alpharius-/log/src/main.cpp",
+  "output": "CMakeFiles/LOG.dir/src/main.cpp.o"
 }
 ]
