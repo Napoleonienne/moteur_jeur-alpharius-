@@ -1,3 +1,0 @@
-/home/guy/Bureau/moteur_jeur-alpharius-/log/build/CMakeFiles/LOG.dir
-/home/guy/Bureau/moteur_jeur-alpharius-/log/build/CMakeFiles/edit_cache.dir
-/home/guy/Bureau/moteur_jeur-alpharius-/log/build/CMakeFiles/rebuild_cache.dir
