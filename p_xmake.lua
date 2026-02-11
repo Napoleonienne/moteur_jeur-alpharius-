@@ -3,6 +3,10 @@
 
 set_languages("cxx23")
 
+set_toolchains("clang")
+add_cxflags("-flto=thin")
+add_ldflags("-flto=thin", "-fuse-ld=mold")
+
 add_rules("mode.debug", "mode.release")
 
 if is_mode("release") then
@@ -14,7 +18,7 @@ local imgui_dir = path.join(os.projectdir(), "externe/imgui")
 local physx_dir = path.join(os.projectdir(), "externe/physique")
 local physx_source = path.join(physx_dir, "physx/bin/linux.x86_64/debug")
 
-add_requires("opengl", "glm", "glfw")
+add_requires("glm", "glfw")
 
 target("moteur_jeur-alpharius")
     set_kind("binary")
@@ -29,14 +33,11 @@ target("moteur_jeur-alpharius")
         path.join(imgui_dir, "imgui_widgets.cpp"),
         path.join(imgui_dir, "imgui_demo.cpp"),
         path.join(imgui_dir, "backends/imgui_impl_glfw.cpp"),
-        path.join(imgui_dir, "backends/imgui_impl_opengl3.cpp")
+        path.join(imgui_dir, "backends/imgui_impl_vulkan.cpp")
     )
-
-    add_defines("IMGUI_IMPL_OPENGL_LOADER_GLAD")
 
     add_includedirs(
         "dependance/",
-        "dependance/opengl",
         "dependance/vulkan",
         "externe",
         imgui_dir,
@@ -45,7 +46,7 @@ target("moteur_jeur-alpharius")
         path.join(physx_dir, "pxshared/include")
     )
 
-    add_packages("opengl", "glm", "glfw")
+    add_packages("glm", "glfw")
 
     -- PyBind11 & spdlog submodules
     includes("externe/pybind")
