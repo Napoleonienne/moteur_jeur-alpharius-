@@ -37,13 +37,17 @@
 *.out
 *.app
 
-*/out
 # debug information files
 *.dwo
-engine/son/build
-log/build
+
+# Build directories
+build/
+*/build/
+*/out
 out
 
 # xmake
 .xmake/
-build/_codeql_detected_source_root
+
+# CodeQL
+_codeql_detected_source_root

@@ -1,1 +1,0 @@
-/usr/bin/g++-14 -g CMakeFiles/son.dir/src/main.cpp.o -o son   -L/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/fmod_implementation/fmodstudioapi20309linux/api/core/lib  -L/home/guy/Bureau/moteur_jeur-alpharius-/engine/son/fmod_implementation/fmodstudioapi20309linux/api/studio/lib 

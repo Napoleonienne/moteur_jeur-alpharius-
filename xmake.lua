@@ -14,7 +14,7 @@ includes("engine/physique")
 includes("engine/lscrupt")
 includes("engine/multi")
 includes("engine/ecs")
-includes("log")
+includes("engine/log")
 
 target("moteur_jeur-alpharius")
     set_kind("binary")
