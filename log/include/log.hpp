@@ -1,41 +1,36 @@
 #pragma once
-#define GLM_ENABLE_EXPERIMENTAL
-#pragma warning(push, 0)
+
 #include <spdlog/spdlog.h>
-#include <spdlog/fmt/ostr.h>
-#pragma warning(pop)
+#include <memory>
 
+namespace alpharius {
+namespace system {
 
+class log {
+public:
+    static void init();
 
+    static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
+    static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 
-namespace alpharius
-{
-    namespace syteme{
-        class log{
-            public:
-            static void init();
-            private:
-
-
-
-
+private:
+    static std::shared_ptr<spdlog::logger> s_CoreLogger;
+    static std::shared_ptr<spdlog::logger> s_ClientLogger;
 };
 
-    };
-    
-} // namespace name
+} // namespace system
+} // namespace alpharius
 
+// Core log macros (engine internals)
+#define AL_CORE_TRACE(...)    ::alpharius::system::log::GetCoreLogger()->trace(__VA_ARGS__)
+#define AL_CORE_INFO(...)     ::alpharius::system::log::GetCoreLogger()->info(__VA_ARGS__)
+#define AL_CORE_WARN(...)     ::alpharius::system::log::GetCoreLogger()->warn(__VA_ARGS__)
+#define AL_CORE_ERROR(...)    ::alpharius::system::log::GetCoreLogger()->error(__VA_ARGS__)
+#define AL_CORE_CRITICAL(...) ::alpharius::system::log::GetCoreLogger()->critical(__VA_ARGS__)
 
-// Core log macros
-#define HZ_CORE_TRACE(...)    ::Hazel::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define HZ_CORE_INFO(...)     ::Hazel::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define HZ_CORE_WARN(...)     ::Hazel::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define HZ_CORE_ERROR(...)    ::Hazel::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define HZ_CORE_CRITICAL(...) ::Hazel::Log::GetCoreLogger()->critical(__VA_ARGS__)
-
-// Client log macros
-#define HZ_TRACE(...)         ::Hazel::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define HZ_INFO(...)          ::Hazel::Log::GetClientLogger()->info(__VA_ARGS__)
-#define HZ_WARN(...)          ::Hazel::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define HZ_ERROR(...)         ::Hazel::Log::GetClientLogger()->error(__VA_ARGS__)
-#define HZ_CRITICAL(...)      ::Hazel::Log::GetClientLogger()->critical(__VA_ARGS__)
+// Client log macros (application layer)
+#define AL_TRACE(...)         ::alpharius::system::log::GetClientLogger()->trace(__VA_ARGS__)
+#define AL_INFO(...)          ::alpharius::system::log::GetClientLogger()->info(__VA_ARGS__)
+#define AL_WARN(...)          ::alpharius::system::log::GetClientLogger()->warn(__VA_ARGS__)
+#define AL_ERROR(...)         ::alpharius::system::log::GetClientLogger()->error(__VA_ARGS__)
+#define AL_CRITICAL(...)      ::alpharius::system::log::GetClientLogger()->critical(__VA_ARGS__)
