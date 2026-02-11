@@ -41,4 +41,9 @@
 # debug information files
 *.dwo
 engine/son/build
+log/build
 out
+
+# xmake
+.xmake/
+build/
