@@ -52,6 +52,7 @@ public:
     virtual ~System() = default;
     virtual void update(float dt) = 0;
 
+protected:
     std::vector<Entity> m_entities;
 };
 

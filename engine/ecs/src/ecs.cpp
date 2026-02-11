@@ -12,6 +12,9 @@ EntityManager::EntityManager() {
 }
 
 Entity EntityManager::createEntity() {
+    if (m_availableEntities.empty()) {
+        return MAX_ENTITIES; // sentinel value indicating failure
+    }
     Entity id = m_availableEntities.back();
     m_availableEntities.pop_back();
     ++m_entityCount;
