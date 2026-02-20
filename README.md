@@ -51,3 +51,4 @@ https://iquilezles.org/articles/
 esquice de structure:
 <img width="2095" height="1226" alt="GlobalEngineArchitectureDiagram drawio" src="https://github.com/user-attachments/assets/c0513b16-29fc-469e-8a51-da04461baaf2" />
 
+ce procject je personnel va probablement longtmep des anné pour comprendre enfin totalement tout les concept que j'ai envie d'explorer  dns ce project ke pense me concentrer le rendu et les  syteme principale comme ecs, le syteme de loggin, 
