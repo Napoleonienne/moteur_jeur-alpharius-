@@ -9,10 +9,10 @@ add_requires("spdlog 1.17.0")
 
 
 add_defines("ROOT")
-target("vulkan_test")
+target("rendus")
     set_kind("binary")
 
-    
+    add_files('rendu.cpp')
 
     add_defines("GLM_ENABLE_EXPERIMENTAL")
     -- Find and link Vulkan (required)
