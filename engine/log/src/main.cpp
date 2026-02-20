@@ -2,6 +2,7 @@
 
 int main()
 {
+    /*
     alpharius::system::log::init();
 
     AL_CORE_INFO("Welcome to Alpharius Engine!");
@@ -11,6 +12,7 @@ int main()
 
     AL_INFO("Application layer initialized");
     AL_TRACE("Trace message from application");
+    */
 
     return 0;
 }
