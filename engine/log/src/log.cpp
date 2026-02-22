@@ -22,3 +22,4 @@ void log::init() {
 } // namespace system
 } // namespace alpharius
 
+int main(){return 0;}

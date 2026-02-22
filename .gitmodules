@@ -1,3 +1,6 @@
 [submodule "externe/pybind"]
 	path = externe/pybind
 	url = https://github.com/pybind/pybind11
+[submodule "engine/son/externe/libsndfile"]
+	path = engine/son/externe/libsndfile
+	url = https://github.com/libsndfile/libsndfile
