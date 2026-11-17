@@ -4,7 +4,7 @@ Alpharisus recement changer avis il sera plutoy un moteur penser pour creer des 
 
 Plutôt que de perdre mon temps à réinventer la roue, j'ai choisi de m'appuyer sur des fondations éprouvées pour les aspects les plus fastidieux du développement :
 
-    Physique : La gestion des collisions et de la dynamique sera confiée à PhysX. Si l'envie me prend de plonger dans les arcanes de la physique plus tard, je le ferai, mais pour l'heure, laissons cela à ceux qui l'ont déjà      perfectionné.
+    Physique : La gestion des collisions et de la dynamique sera confiée à jolt. Si l'envie me prend de plonger dans les arcanes de la physique plus tard, je le ferai, mais pour l'heure, laissons cela à ceux qui l'ont déjà      perfectionné.
 
     Audio : Par pure flemme — . Le choix se portera sur OpenAL ou FMOD selon les besoins futurs.
 
