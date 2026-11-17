@@ -1,6 +1,8 @@
 Projet Moteur : Alpharisus
 
-Alpharisus recement changer avis il sera plutoy un moteur penser pour creer des monde ou ia serezun jour
+Alpharisus recement changer avis il sera plutoy un moteur penser pour creer des monde ou ia serezun jour*
+
+moteur de simulation + systèmes + actions + contrôleurs + représentation visuelle
 
 Plutôt que de perdre mon temps à réinventer la roue, j'ai choisi de m'appuyer sur des fondations éprouvées pour les aspects les plus fastidieux du développement :
 
