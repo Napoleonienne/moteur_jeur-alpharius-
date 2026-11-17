@@ -1,17 +1,16 @@
 Projet Moteur : Alpharisus
 
-Alpharisus est un moteur de jeu dont la genèse s'étendra sur les années à venir. Actuellement en phase de planification et de sélection des dépendances, il se dessine comme une structure où l'ambition technique côtoie une efficacité sans concession.
-I. Les Piliers Techniques (Dépendances)
+Alpharisus recement changer avis il sera plutoy un moteur penser pour creer des monde ou ia serezun jour
 
 Plutôt que de perdre mon temps à réinventer la roue, j'ai choisi de m'appuyer sur des fondations éprouvées pour les aspects les plus fastidieux du développement :
 
     Physique : La gestion des collisions et de la dynamique sera confiée à PhysX. Si l'envie me prend de plonger dans les arcanes de la physique plus tard, je le ferai, mais pour l'heure, laissons cela à ceux qui l'ont déjà      perfectionné.
 
-    Audio : Par pure "flemme" — ou plutôt par une saine économie d'énergie — je refuse de manipuler manuellement les formats de données sonores. Le choix se portera sur OpenAL ou FMOD selon les besoins futurs.
+    Audio : Par pure flemme — . Le choix se portera sur OpenAL ou FMOD selon les besoins futurs.
 
     Journalisation (Logging) : Un système de logs robuste est indispensable pour observer le chaos. Ce rôle sera dévolu à spdlog.
 
-    Interface utilisateur : L’interface de débogage et de contrôle sera propulsée par ImGui, l’outil de prédilection pour ceux qui préfèrent l’efficacité à l’esthétique de surface.
+    Interface utilisateur : L’interface de débogage et de contrôle sera propulsée par ImGui,clay, l’outil de prédilection pour ceux qui préfèrent l’efficacité à l’esthétique de surface.
 
     Réseau : J’envisage l’intégration de SpaceTimeDB pour explorer les frontières du multijoueur synchrone, une fois les bases du moteur solidifiées.
 
